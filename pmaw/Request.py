@@ -249,7 +249,7 @@ class Request:
                     log.debug(f'Created {len(ids_split)} id slices')
 
                     # create url payload tuples
-                    url_payloads = [(url + '?ids=' + id_str, self.payload)
+                    url_payloads = [(url + '?link_id=' + id_str, self.payload)
                                     for id_str in ids_split]
                 # add payloads to req_list
                 self.req_list.extend(url_payloads)

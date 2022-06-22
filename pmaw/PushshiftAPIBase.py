@@ -237,7 +237,7 @@ class PushshiftAPIBase:
         self._reset()
 
         if kind == 'submission_comment_ids':
-            endpoint = f'{dataset}/submission/comment_ids/'
+            endpoint = f'{dataset}/comment/search'
         else:
             endpoint = f'{dataset}/{kind}/search'
 
